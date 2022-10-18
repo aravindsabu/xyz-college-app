@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">name</th>
+                                <th scope="col">rollnumber</th>
+                                <th scope="col">admissionnumber</th>
+                                <th scope="col">collegename</th>
+                                <th scope="col">department</th>
+                                <th scope="col">bloodgroup</th>
+                                <th scope="col"> dateofbirth</th>
+                                <th scope="col">parentname</th>
+                                <th scope="col">guardianname</th>
+                                <th scope="col">emailid</th>
+                                <th scope="col">address</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of add">
+                                <td>{{i.name}}</td>
+                                <td>{{i.rollnumber}}</td>
+                                <td>{{i.admissionnumber}}</td>
+                                <td>{{i.collegename}}</td>
+                                <td>{{i.department}}</td>
+                                <td>{{i.bloodgroup}}</td>
+                                <td>{{i.dateofbirth}}</td>
+                                <td>{{i.parentname}}</td>
+                                <td>{{i.guardianname}}</td>
+                                <td>{{i.emailid}}</td>
+                                <td>{{i.address}}</td>
+
+
+
+                               
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
