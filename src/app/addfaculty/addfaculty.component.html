@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">faculty name</label>
+                    <input placeholder="faculty name" class="form-control" type="text" name="facultyname" [(ngModel)]="facultyname" id="">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">department</label>
+                    <select class="form-control" name=" department" [(ngModel)]=" department" id="">
+                        <option value="BCA">BCA</option>
+                        <option value="BCOM">BCOM</option>
+                        <option value="BBA">BBA</option>
+                        <option value="BSW">BSW</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="MSW">MSW</option>
+                    </select>
+                    
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">desigination</label>
+                    <input placeholder="desigination" class="form-control" type="text" name="desigination" [(ngModel)]="desigination" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">date of birth</label>
+                    <input placeholder="dob" class="form-control" type="date" name="dateofbirth"[(ngModel)]="dateofbirth" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">educational quality</label>
+                    <input placeholder="educational quality" class="form-control" type="text" name="educationalquality" [(ngModel)]="educationalquality" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">address</label>
+                    <textarea placeholder="address" class="form-control" name="address" [(ngModel)]="address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">mobile number</label>
+                    <input placeholder="mobile number" class="form-control" type="text" name="mobilenumber"[(ngModel)]="mobilenumber" id="">
+                </div>
+               
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">date of join</label> 
+                    <input placeholder="date of join" class="form-control" type="date" name="dateofjoin"[(ngModel)]="dateofjoin" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success"(click)="readvalues()">register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
